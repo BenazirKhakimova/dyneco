@@ -3,7 +3,14 @@
 
 echo '🏗️👷 Styling and linting project before committing'
 
+# Run lint-staged
 npx lint-staged
+
+# Check exit code of lint-staged
+if [ $? -ne 0 ]; then
+  echo '❌❌❌❌ Oops! Something went wrong with formatting or linting. Please fix the issues and try again. ❌❌❌❌'
+  exit 1
+fi
 
 # If everything passes... Now we can commit
 echo '✅✅✅✅ Yo you got this... I am committing this now. ✅✅✅✅'
