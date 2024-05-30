@@ -27,13 +27,5 @@
         "lint-staged": "^15.2.5",
         "prettier": "^3.2.5",
         "typescript": "^5"
-    },
-    "lint-staged": {
-        "*.{js,ts,tsx}": [
-            "eslint --fix"
-        ],
-        "*.{json,js,ts,jsx,tsx,html}": [
-            "prettier --write"
-        ]
     }
 }
